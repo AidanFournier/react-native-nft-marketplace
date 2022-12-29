@@ -1,18 +1,39 @@
-import { StyleSheet, Text, View } from 'react-native';
+import { createStackNavigator } from "@react-navigation/stack";
+import { NavigationContainer, DefaultTheme } from "@react-navigation/native";
+import { useFonts } from "expo-font";
 
-export default function App() {
+import Home from "./screens/Home";
+import Details from "./screens/Details";
+
+const Stack = createStackNavigator();
+
+const theme = {
+  ...DefaultTheme,
+  colors: {
+    ...DefaultTheme.colors,
+    background: 'transparent'
+  }
+}
+
+const App = () => {
+  const [loaded] = useFonts({
+    InterBold: require("./assets/fomts/Inter-Bold.ttf"),
+    InterSemiBold: require("./assets/fomts/Inter-SemiBold.ttf"),
+    InterMedium: require("./assets/fomts/Inter-Medium.ttf"),
+    InterRegular: require("./assets/fomts/Inter-Regular.ttf"),
+    InterLight: require("./assets/fomts/Inter-Light.ttf"),
+  })
+
+  if (!loaded) return null;
+
   return (
-    <View style={styles.container}>
-      <Text>Hello from React Native!</Text>
-    </View>
+    <NavigationContainer theme={theme}>
+      <Stack.Navigator screenOptions={{ headerShown: false }} initialRouteName="Home">
+        <Stack.Screen name="Home" component={Home}/>
+        <Stack.Screen name="Details" component={Details}/>
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+export default App;
