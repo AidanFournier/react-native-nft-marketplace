@@ -17,11 +17,11 @@ const theme = {
 
 const App = () => {
   const [loaded] = useFonts({
-    InterBold: require("./assets/fomts/Inter-Bold.ttf"),
-    InterSemiBold: require("./assets/fomts/Inter-SemiBold.ttf"),
-    InterMedium: require("./assets/fomts/Inter-Medium.ttf"),
-    InterRegular: require("./assets/fomts/Inter-Regular.ttf"),
-    InterLight: require("./assets/fomts/Inter-Light.ttf"),
+    InterBold: require("./assets/fonts/Inter-Bold.ttf"),
+    InterSemiBold: require("./assets/fonts/Inter-SemiBold.ttf"),
+    InterMedium: require("./assets/fonts/Inter-Medium.ttf"),
+    InterRegular: require("./assets/fonts/Inter-Regular.ttf"),
+    InterLight: require("./assets/fonts/Inter-Light.ttf"),
   })
 
   if (!loaded) return null;
