@@ -17,6 +17,13 @@ const HomeHeader = () => {
           resizeMode="contain"
           style={{ width: 90, height: 25 }}
         />
+        <View style={{ width: 45, height: 45 }}>
+          <Image 
+            source={assets.person01}
+            resizeMode="contain"
+            style={{ width: '100%', height: '100%' }}
+          />
+        </View>
       </View>
     </View>
   )
