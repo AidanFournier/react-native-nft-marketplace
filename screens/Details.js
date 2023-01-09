@@ -1,3 +1,4 @@
+import React from "react";
 import { View, Text, SafeAreaView, Image, StatusBar, FlatList } from "react-native";
 
 import { COLORS, FONTS, SIZES, SHADOWS, assets } from '../constants';
@@ -55,9 +56,13 @@ const Details = ({ route, navigation }) => {
         showsVerticalScrollIndicator={false}
         contentContainerStyle={{ paddingBottom: SIZES.extraLarge * 3 }}
         ListHeaderComponent={() => (
-          <>
+          <React.Fragment>
             <DetailsHeader data={data} navigation={navigation} />
-          </>
+            <SubInfo />
+            <View style={{ padding: SIZES.font }}>
+              <DetailsDesc data={data}/>
+            </View>
+          </React.Fragment>
         )}
       />
     </SafeAreaView>
