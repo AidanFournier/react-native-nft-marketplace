@@ -5,7 +5,10 @@ import { EthPrice, NFTTitle } from './SubInfo';
 import { COLORS, SIZES, FONTS } from '../constants';
 
 const DetailsDesc = ({ data }) => {
-  return (
+    const [ text, setText ] = useState(data.description.slice(0, 100));
+    const [ readMore, setReadMore ] = useState(false);
+  
+    return (
     <>
         <View style={{
             width: '100%',
@@ -34,7 +37,28 @@ const DetailsDesc = ({ data }) => {
                     fontFamily: FONTS.regular,
                     color: COLORS.secondary,
                     lineHeight: SIZES.large
-                }}>{data.description}</Text>
+                }}>
+                    {text}
+                    {!readMore && '...'}
+                </Text>
+                <Text 
+                    style={{
+                        fontSize: SIZES.small,
+                        fontFamily: FONTS.semiBold,
+                        color: COLORS.primary
+                    }}
+                    onPress={() => {
+                        if(!readMore) {
+                            setText(data.description);
+                            setReadMore(true);
+                        } else {
+                            setText(data.description.slice(0, 100));
+                            setReadMore(false);
+                        }
+                    }}
+                >
+                    {readMore ? ' Show Less' : ' Read More'}
+                </Text>
             </View>
         </View>
     </>
