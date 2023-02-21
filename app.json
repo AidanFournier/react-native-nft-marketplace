@@ -2,7 +2,7 @@
   "expo": {
     "name": "react-native-nft-marketplace",
     "slug": "nft-marketplace-app",
-    "runtimeVersion": {
+    "version": {
       "policy": "sdkVersion"
     },
     "orientation": "portrait",
