@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "react-native-nft-marketplace",
-    "slug": "react-native-nft-marketplace",
+    "slug": "nft-marketplace-app",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -28,6 +28,12 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "4124c047-1106-4994-98d5-3677d59d98df"
+      }
+    },
+    "owner": "aidoufou"
   }
 }
