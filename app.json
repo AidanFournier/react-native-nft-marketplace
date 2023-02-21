@@ -2,12 +2,13 @@
   "expo": {
     "name": "react-native-nft-marketplace",
     "slug": "nft-marketplace-app",
-    "version": {
-      "policy": "sdkVersion"
-    },
+    "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
+    "runtimeVersion": {
+      "policy": "sdkVersion"
+    },
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
