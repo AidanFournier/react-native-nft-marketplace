@@ -2,6 +2,7 @@
   "expo": {
     "name": "react-native-nft-marketplace",
     "slug": "nft-marketplace-app",
+    "description": "An NFT marketplace app built for mobile devices with React Native.",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/ProNef-icon.png",
