@@ -4,13 +4,13 @@
     "slug": "nft-marketplace-app",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/ProNef-icon.png",
     "userInterfaceStyle": "light",
     "runtimeVersion": {
       "policy": "sdkVersion"
     },
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/ProNef-splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
