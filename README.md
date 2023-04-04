@@ -1,6 +1,8 @@
 # NFT Marketplace
 An NFT marketplace app built for mobile devices with React Native.
 
+https://user-images.githubusercontent.com/78288118/229705931-6da97ec6-0931-4ce3-8f85-34c178dc8af3.MP4
+
 
 ## Credits
 This project was bootstrapped with [Create React Native App](https://github.com/react-community/create-react-native-app).
